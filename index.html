@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Own Bank</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <style>
+      .all{
+        display: flex;
+        height: 100vh;
+        
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: rgb(220, 218, 221);
+      }
+    </style>
+</head>
+<body>
+    
+
+    <div class="all">
+      <main class="h-auto  sm:w-full md:w-3/4 lg:w-2/4 ">
+        <section class=" mx-auto bg-green-700 h-full px-16 ">
+
+          <header class="overflow-hidden">
+            <h1 class="sm:text-2xl md:text-4xl lg:text-4xl  mt-16 text-center border divide-light-blue-400 text-white p-4 rounded">Welcome to <span class="font-semibold">Own Bank !!</span></h1>
+            </header>
+
+          <div class="py-8">
+            <input id="user-email" type="text" placeholder="Enter Email-jobayerrahman" class="border-gray-600 border my-8 block w-full px-2 h-12 rounded">
+            <input id="user-password" class="border-gray-600 border my-8 block w-full px-2 h-12 rounded" type="password" name="" id="" placeholder="Enter Password-jobayer">
+
+            <button id="submit-btn" class="bg-red-600 px-4 py-2 text-white font-medium rounded">submit</button>
+          </div>
+        </section>
+    </main>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
