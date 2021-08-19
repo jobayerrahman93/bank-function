@@ -6,16 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bank</title>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+
+  /*   .notify {
+    color: #fff;
+    display: none;
+    background: #222436;
+    margin-top: 20px;
+    border-radius: 15px;
+    padding: 5px 20px;
+   
+    } */
+    /* .notify-section{
+    width: 35%;
+    height: 80px;
+
+    
+    } */
+
+    </style>
 </head>
 <body>
     <header>
         <h1 class="text-4xl mt-16 text-center">Bank <span class="font-semibold">Transaction !!</span></h1>
         </header>
 
+        
+
         <main class="w-3/4 mx-auto pb-8">
             <section class="mt-20">
 
-                <div class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 text-center text-white">
+                <div class="notify-section text-center mx-auto my-4 lg:w-2/6 md:w-3/6 sm:w-4/6 h-12  text-white">
+                    <p id="notify-fail" class="notify bg-gray-800 mt-8 py-1.5 hidden px-2 rounded-xl">❌ invalid amount, Please try again</p>
+                    <p id="notify-success" class="notify bg-gray-800 mt-8 hidden py-1.5 px-2 rounded-xl">✅ Pin Matched... Secret door is opening for you</p>
+                </div>
+
+                <div class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 text-center text-white overflow-hidden">
                     <div class="bg-blue-600 rounded py-8">
                         <h1 class="text-2xl my-4">Deposit</h1>
                         <h2 class="text-4xl">$<span id="deposit-balance">00</span></h2>

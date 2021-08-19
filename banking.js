@@ -84,6 +84,13 @@ if(newDepositBalanceValue >0)
 // add deposit total into balance grid
 totalBalance(newDepositBalanceValue,true);
 }
+else{
+  document.getElementById('notify-fail').style.display='block';
+  setTimeout(() => {
+  document.getElementById('notify-fail').style.display='none';
+    
+  }, 2000);
+}
 
 
 });
@@ -103,6 +110,13 @@ document.getElementById('withdraw-btn').addEventListener('click',function()
     totalField('withdraw-balance',withDrawBalanceValue);
     // update balance 
     totalBalance(withDrawBalanceValue,false);
+   }
+   else{
+    document.getElementById('notify-fail').style.display='block';
+    setTimeout(() => {
+    document.getElementById('notify-fail').style.display='none';
+      
+    }, 2000);
    }
 
   

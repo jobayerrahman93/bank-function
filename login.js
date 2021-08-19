@@ -14,7 +14,12 @@ document.getElementById('submit-btn').addEventListener('click',function(){
     }
     else
     {
-        alert("invalid password/username");
+        document.getElementById('notify-fail').style.display='block';
+        setTimeout(() => {
+        document.getElementById('notify-fail').style.display='none';
+          
+        }, 2000);
+       
     }
 
 
